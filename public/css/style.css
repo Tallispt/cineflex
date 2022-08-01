@@ -16,7 +16,10 @@ body {
     justify-content: center;
 }
 
-.select-movie-title {
+.select-movie-title,
+.select-session-title,
+.select-seat-title,
+.success-title {
     height: 110px;
     font-weight: 400;
     font-size: 24px;
@@ -26,7 +29,7 @@ body {
     justify-content: center;
     letter-spacing: 0.04em;
     color: #293845;
-
+    text-align: center;
 }
 
 .select-movie-container {
@@ -49,4 +52,224 @@ body {
 .select-movie-container .movie-cover img {
     width: 100%;
     height: 100%;
+}
+
+.select-session-container {
+    padding-left: 23px;
+    margin-bottom: 175px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.session-date {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 0.02em;
+    color: #293845;
+}
+
+.select-seat-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 25px;
+    margin-bottom: 175px;
+}
+
+.seats {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 450px;
+    gap: 20px;
+    padding-bottom: 25px;
+    width: 100%;
+}
+
+.session-hours {
+    display: flex;
+    gap: 8px;
+}
+
+.session-hour-individual {
+    width: 83px;
+    height: 43px;
+    background: #E8833A;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.seat-exemple {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+}
+
+.seat-exemple div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.circle {
+    width: 25px;
+    height: 25px;
+    border-radius: 17px;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 13px;
+    letter-spacing: 0.04em;
+    color: #000000;
+}
+
+.selected {
+    background: #8DD7CF;
+    border: 1px solid #1AAE9E;
+}
+
+.available {
+    background: #C3CFD9;
+    border: 1px solid #7B8B99;
+}
+
+.unavailable {
+    background: #FBE192;
+    border: 1px solid #F7C52B;
+}
+
+.seat-exemple div p {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+    letter-spacing: -0.013em;
+    color: #4E5A65;
+}
+
+.form {
+    padding: 35px 0 60px 0;
+    width: 100%;
+}
+
+.form p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #293845;
+    padding-top: 10px;
+}
+
+.form input {
+    width: 100%;
+    height: 51px;
+    background: #FFFFFF;
+    border: 1px solid #D5D5D5;
+    border-radius: 3px;
+    padding-left: 5px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.form input::placeholder {
+    font-style: italic;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #AFAFAF;
+}
+
+.button {
+    width: 225px;
+    height: 42px;
+    background: #E8833A;
+    border-radius: 3px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+    align-self: center;
+    text-decoration: none;
+}
+
+.footer {
+    height: 117px;
+    width: 100%;
+    background: #DFE6ED;
+    border: 1px solid #9EADBA;
+    padding: 14px 10px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    position: fixed;
+    bottom: 0;
+}
+
+.footer .movie {
+    background: #FFFFFF;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 2px;
+    padding: 8px;
+}
+
+.footer div img {
+    width: 100%;
+    height: 100%;
+    width: 64px;
+    height: 89px;
+}
+
+.footer p {
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 30px;
+    color: #293845;
+}
+
+.success-title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.04em;
+    color: #247A6B;
+}
+
+.success-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 0 25px;
+}
+
+.success-container div p:first-child {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.04em;
+    color: #293845;
+}
+
+.success-container div p {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+    letter-spacing: 0.04em;
+    color: #293845;
 }

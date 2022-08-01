@@ -1,11 +1,13 @@
 import axios from "axios";
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 function Movies({ data }) {
+
     return (
-        <div className="movie-cover">
+        <Link className="movie-cover" to={`/filme/${data.id}`}>
             <img src={data.posterURL} alt={data.title} />
-        </div>
+        </Link>
     )
 }
 
@@ -13,7 +15,7 @@ export default function Home() {
     const [movies, setMovies] = useState([])
 
     useEffect(() => {
-        const promise = axios.get('https://mock-api.driven.com.br/api/v5/cineflex/movies')
+        const promise = axios.get('https://mock-api.driven.com.br/api/v7/cineflex/movies')
 
         promise
             .then(value => setMovies(value.data))
